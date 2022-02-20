@@ -1,0 +1,33 @@
+.order-position {
+    width: 70%;
+    border: 3px solid darkslateblue;
+    border-radius: 10px;
+    margin: 4px 0;
+    font-size: 20px
+}
+
+.order-position .title {
+    margin-left: 0.25%;
+    width: 50%;
+    display: inline-block;
+}
+
+.order-position .manufacturer {
+    width: 10%;
+    display: inline-block;
+}
+
+.order-position .quantity {
+    width: 10%;
+    display: inline-block;
+}
+
+.order-position .piece-price {
+    width: 15%;
+    display: inline-block;
+}
+
+.order-position .price {
+    width: 10%;
+    display: inline-block;
+}

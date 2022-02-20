@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dobry Wędkarz - Internetowy sklep wędkarski</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div th:replace="fragments.html :: menu"></div>
+
+<div id="content">
+    <form method="post" id="login-form">
+        <input type="text" placeholder="Login" name="login">
+        <br>
+        <input type="password" placeholder="Hasło" name="password">
+        <br>
+        <input type="submit" value="Zaloguj">
+    </form>
+    <a href="/register" class="btn_v1">Załóż konto</a>
+</div>
+
+<div id="logo" th:fragment="logo"><img src="logo_e2.jpg" id="bg"></div>
+</body>
+</html>

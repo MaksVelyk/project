@@ -1,0 +1,47 @@
+.gear {
+    border: 3px solid green;
+    border-radius: 10px;
+    margin: 10px;
+    width: 45%;
+    padding: 5px;
+}
+
+.gear .title {
+    color: green;
+    font-weight: 800;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.gear .manufacturer {
+    color: seagreen;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.gear .price {
+    color: seagreen;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.gear .article_number {
+    color: seagreen;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+.gear .quantity {
+    color: seagreen;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+.gear div {
+    margin: 5px;
+}

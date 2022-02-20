@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dobry Wędkarz - Internetowy sklep wędkarski</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<div th:replace="fragments.html :: menu"></div>
+
+<div id="content">
+    <div class="order-position">
+        <div class="title">Tytuł</div>
+        <div class="manufacturer">Producent</div>
+        <div class="quantity">Ilość</div>
+        <div class="piece-price">Cena jednostkowa</div>
+        <div class="price">Сena całkowita</div>
+    </div>
+    <div th:each="position : ${cart.orderPositions}" class="order-position">
+        <div th:text="${position.gear.title}" class="title"></div>
+        <div th:text="${position.gear.manufacturer}" class="manufacturer"></div>
+        <div th:text="${position.quantity}" class="quantity"></div>
+        <div th:text="${position.gear.price + 'zł'}" class="piece-price"></div>
+        <div th:text="${position.gear.price * position.quantity + 'zł'}" class="price"></div>
+    </div>
+    <div class="order-position">
+        <div class="title"></div>
+        <div class="manufacturer"></div>
+        <div class="quantity"></div>
+        <div class="piece-price">Suma</div>
+        <div th:text="${sum + 'zł'}" class="price"></div>
+    </div>
+    <a href="/order" class="btn_v2">Zamów</a>
+</div>
+
+<div id="logo" th:fragment="logo"><img src="logo_y2.jpg" id="bg_v2"></div>
+</body>
+</html>
